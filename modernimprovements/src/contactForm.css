@@ -1,0 +1,141 @@
+.contactForms {
+    display: flex;
+    height: auto;
+    padding: 100px 30px;
+    justify-content: space-evenly;
+}
+
+.contactInfo {
+    display: flex;
+}
+
+.nameAndService {
+    display: flex;
+}
+
+.nameSection {
+    padding-bottom: 30px;
+
+}
+
+.namePlaceholder,
+.emailInfo,
+.phoneNumberInfo {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    width: 250px;
+    padding-bottom: 7px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.projectDescription {
+    width: 100%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    margin-bottom: 30px;
+    padding-bottom: 7px;
+    font-family: 'Oranienbaum', serif;
+    height: 100px;
+}
+
+.namePlaceholder::placeholder,
+.emailInfo::placeholder,
+.phoneNumberInfo::placeholder,
+.otherService::placeholder,
+.projectDescription::placeholder {
+    font-size: 18px;
+}
+
+
+.serviceRequest {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    width: 250px;
+    padding-bottom: 1px;
+    margin-left: 50px;
+    font-family: 'Oranienbaum', serif;
+    font-size: 18px;
+}
+
+.otherService {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    width: 250px;
+    padding-bottom: 6px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.phoneNumberInfo {
+    margin-left: 50px;
+}
+
+.emailInfo {
+    margin-bottom: 25px;
+}
+
+.submitBtn {
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 18px;
+    height: 40px;
+    font-family: 'Oranienbaum', serif;
+    width: 120px;
+    box-shadow: 1px 0 12px black;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.submitBtn:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleY(0);
+}
+
+.submitBtn:hover:before {
+    transform: scaleY(0);
+}
+
+.solutions,
+.contactUs {
+    font-size: 25px;
+    font-weight: bold;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.telephone,
+.emailaddress {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.telephone>a,
+.emailaddress>a {
+    color: gray;
+    margin-left: 5px;
+}

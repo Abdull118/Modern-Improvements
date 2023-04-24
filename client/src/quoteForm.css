@@ -1,0 +1,202 @@
+.background {
+    background: rgba(49, 49, 49, 0.4);
+    height: 100vh;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 10;
+    font-family: 'Oranienbaum', serif;
+}
+
+.background form {
+    height: auto;
+
+}
+
+.sideBars {
+    background-color: transparent;
+}
+
+.quoteForm {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding: 100px 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 296px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 680px;
+    box-shadow: 1px 0 47px white;
+    background-color: #ffffff;
+    z-index: 10;
+}
+
+
+.quoteFormInfo {
+    text-align: center;
+}
+
+.contactInfo {
+    display: flex;
+}
+
+.nameAndService {
+    display: flex;
+}
+
+.nameSection {
+    padding-bottom: 30px;
+
+}
+
+.namePlaceholder,
+.emailInfo,
+.phoneNumberInfo {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    width: 250px;
+    padding-bottom: 7px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.namePlaceholder::placeholder,
+.emailInfo::placeholder,
+.phoneNumberInfo::placeholder,
+.otherService::placeholder {
+    font-size: 18px;
+}
+
+.serviceRequest {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    width: 250px;
+    padding-bottom: 1px;
+    margin-left: 50px;
+    font-family: 'Oranienbaum', serif;
+    font-size: 18px;
+}
+
+.otherService {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0.5px solid gray;
+    width: 250px;
+    padding-bottom: 6px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Oranienbaum', serif;
+}
+
+.phoneNumberInfo {
+    margin-left: 50px;
+}
+
+.emailInfo {
+    margin-bottom: 25px;
+}
+
+.submitBtnq {
+    background-color: black;
+    color: white;
+    border: 0;
+    font-size: 18px;
+    height: 40px;
+    font-family: 'Oranienbaum', serif;
+    width: 120px;
+    box-shadow: 1px 0 12px black;
+    transition: background-color 0.3s ease-in-out;
+    position: absolute;
+    left: 50%;
+    margin-top: 20px;
+    transform: translate(-50%, -50%);
+}
+
+.submitBtnq:hover {
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+}
+
+.submitBtnq:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+    transform: scaleY(0);
+}
+
+.submitBtnq:hover:before {
+    transform: scaleY(0);
+}
+
+.solutions,
+.contactUs {
+    font-size: 25px;
+    font-weight: bold;
+    width: 75%;
+    margin-bottom: 20px;
+}
+
+.telephoneq,
+.emailaddressq {
+    font-size: 17px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.telephoneq>a,
+.emailaddressq>a {
+    color: #000000;
+    margin-left: 5px;
+}
+
+.contactUsQuote {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.contactUsQuote+div {
+    font-weight: bolder;
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.contactUsQuote+div+div {
+    margin-bottom: 5px;
+}
+
+.closeOut {
+    position: absolute;
+    right: 30px;
+    top: 30px
+}
+
+@media only screen and (max-width: 800px) {
+    .quoteForm {
+        width: 80vw;
+        height: 55vh;
+    }
+
+
+
+}

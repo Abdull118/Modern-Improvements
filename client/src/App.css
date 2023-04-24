@@ -1,0 +1,736 @@
+@import url('https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap');
+
+.App {
+  width: auto;
+  height: 950px;
+  margin: 0;
+  font-family: 'Oranienbaum', serif;
+}
+
+.callBtn,
+.msgBtn {
+  display: none;
+}
+
+.image-caption {
+  display: none;
+}
+
+.callToAction {
+  position: fixed;
+  right: 30px;
+  text-align: right;
+  top: 20px;
+  height: 30px;
+  z-index: 4;
+}
+
+.callToAction>a {
+  border: 1.5px solid black;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 10px;
+  color: black;
+  font-size: larger;
+  font-family: 'Oranienbaum', serif;
+  text-shadow: 1px 0 27px white;
+  box-shadow: 1px 0 27px black;
+  text-decoration: none;
+  z-index: 2;
+}
+
+.App>.mainSection>img {
+  max-width: 100%;
+  height: auto;
+  width: auto\9;
+  /* ie8 */
+  position: fixed;
+  z-index: 0;
+}
+
+.mainSection {
+  height: 950px;
+
+}
+
+.innerMainSection {
+  position: absolute;
+  bottom: 300px;
+  right: 90px;
+}
+
+.innerMainSection>button {
+  margin-top: 5px;
+  position: absolute;
+  right: 0;
+}
+
+.innerMainSection>button>a {
+  width: max-content;
+}
+
+.companyName {
+  text-align: center;
+  width: 100%;
+  color: white;
+  font-size: 86px;
+  font-family: 'Oranienbaum', serif;
+  text-shadow: 1px 0 27px #000000;
+}
+
+.slogan {
+  text-align: right;
+  width: 100%;
+  bottom: 270px;
+  color: white;
+  font-size: 48px;
+  font-family: 'Oranienbaum', serif;
+  text-shadow: 1px 0 27px #000000;
+}
+
+.callToActionQuoteBtn {
+  border: 0;
+  background-color: #000000;
+  color: white;
+  height: 53px;
+  width: 181px;
+  font-size: 24px;
+  font-family: 'Oranienbaum', serif;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 1px 0 27px black;
+}
+
+.callToActionQuoteBtn:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.callToActionQuoteBtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  transition: transform 0.3s ease-in-out;
+  transform: scaleY(0);
+}
+
+.callToActionQuoteBtn:hover:before {
+  transform: scaleY(0);
+}
+
+.section1,
+.section2,
+.contactForm,
+.footer,
+.ourServices,
+.aboutUs,
+.testimonials {
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 3;
+
+}
+
+.section1>div:first-child,
+.contactForm>div:first-child,
+.footer>footer:first-child,
+.ourServices>div {
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+}
+
+.testimonials>div {
+  background-color: black;
+  width: 100%;
+  z-index: 7;
+}
+
+.section2>div:first-child,
+.aboutUs>div {
+  background-color: black;
+  width: 100%;
+  z-index: 3;
+}
+
+
+.sideBar {
+  z-index: 5;
+}
+
+.whiteSection,
+.ourServicesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Oranienbaum', serif;
+  z-index: 3;
+  padding: 70px 30px;
+
+}
+
+.ourOffer,
+.theServices {
+  background-color: #000000;
+  width: 280px;
+  font-weight: 900;
+  font-size: 23px;
+  z-index: 3;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 1px 0 20px black;
+}
+
+.ourOfferSlogan {
+  font-size: 48px;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.ourOfferDesc {
+  font-family: 'Oranienbaum', serif;
+  padding: 20px 20px 0 20px;
+  font-size: 18px;
+  display: flex;
+  z-index: 3;
+  justify-content: space-evenly;
+}
+
+.ourOfferDesc * {
+  width: 350px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.part2Title,
+.part1Title,
+.part3Title,
+.step1Title,
+.step3Title,
+.step2Title {
+  z-index: inherit;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.part2Title>div,
+.part1Title>div,
+.part3Title>div,
+.step1Title>div,
+.step3Title>div,
+.step2Title>div {
+  font-size: 28px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.part2Title img,
+.part1Title img,
+.part3Title img,
+.step1Title img,
+.step3Title img {
+  width: 50px;
+}
+
+
+
+.contactUsBtn {
+  border: 0;
+  background-color: #000000;
+  color: white;
+  height: auto;
+  width: auto;
+  padding: 15px;
+  font-size: 24px;
+  font-family: 'Oranienbaum', serif;
+  transition: background-color 0.3s ease-in-out;
+  margin-top: 10px;
+  margin-left: 7px;
+  cursor: pointer;
+  box-shadow: 1px 0 20px black;
+}
+
+.blackSection {
+  background-color: black;
+  color: white;
+  width: 100%;
+  z-index: 3;
+  height: auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.theProcess {
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+  width: 280px;
+  font-weight: 900;
+  font-size: 23px;
+  z-index: 3;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: -20px;
+  box-shadow: 1px 0 20px white;
+  margin-left: 30px;
+}
+
+.step1Desc {
+  width: 200px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.step1MainSection {
+  margin-top: 150px;
+  margin-left: 0;
+}
+
+.verticalSection {
+  display: flex;
+  justify-content: center;
+}
+
+.step3Desc {
+  width: 250px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.step3MainSection {
+  margin-left: 0px;
+  margin-top: 220px;
+}
+
+.step2MainSection {
+  margin-top: 470px;
+}
+
+.step2Desc {
+  width: 250px;
+  text-align: left;
+  font-size: 18px;
+}
+
+.step2Title img {
+  filter: invert();
+  width: 50px;
+}
+
+.step2Title div {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 300px;
+  margin-top: 500px;
+}
+
+.line {
+  border-left: 2px solid white;
+  height: 1000px;
+  position: relative;
+  margin: 0 50px;
+}
+
+.dot1 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: -58px;
+  top: -20px
+}
+
+.dot2 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: -73px;
+  top: -300px
+}
+
+.dot3 {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  position: relative;
+  left: -88px;
+  top: 290px
+}
+
+.footer {
+  text-align: center;
+
+}
+
+footer>div {
+  padding: 10px 0;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.serviceTitles {
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 20px;
+}
+
+.serviceTitles+ul {
+  font-size: 19px;
+}
+
+.serviceClassification {
+  display: flex;
+}
+
+.wallPaint {
+  border-radius: 50%;
+  margin-left: -200px;
+  margin-right: 20px;
+  box-shadow: 1px 0px 27px black;
+  width: 125px;
+  margin-top: -40px;
+}
+
+.doorInstallation,
+.blinds,
+.powerWashing,
+.handyman,
+.driveWay {
+  display: flex;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.paint {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.flooring {
+  margin-bottom: 50px;
+  display: flex;
+
+  align-items: center;
+}
+
+.floor,
+.doors,
+.shades,
+.powerWasher,
+.handyMan {
+  border-radius: 50%;
+  margin-left: -200px;
+  margin-right: 20px;
+  box-shadow: 1px 0px 27px black;
+  width: 125px;
+  height: 127px;
+}
+
+.driveWay {
+  justify-content: center;
+  align-items: center;
+}
+
+.driveWaySeal {
+  border-radius: 50%;
+  margin-right: 20px;
+  box-shadow: 1px 0px 27px black;
+  width: 125px;
+  height: 127px;
+}
+
+.servicingCounty {
+  text-align: center;
+  width: 100%;
+  font-size: larger;
+  text-shadow: 1px 0 15px black;
+}
+
+.aboutUs {
+  color: #ffffff;
+}
+
+.aboutUsTitle {
+  height: auto;
+  background-color: #ffffff;
+  color: #000000;
+  width: 280px;
+  font-weight: 900;
+  font-size: 23px;
+  z-index: 3;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-shadow: 1px 0 20px white;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.mainAboutUsSection {
+  padding: 70px 30px;
+}
+
+.whoWeAre {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-left: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.whyUsDesc {
+  padding: 0 50px;
+  font-size: 18px;
+  text-align: justify;
+}
+
+.description {
+  display: flex;
+}
+
+.houseRemodel {
+  margin-right: 10px;
+  width: 500px;
+  box-shadow: 1px 0 27px white;
+}
+
+.testimonialSection {
+  z-index: 4;
+  width: 96vw;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 760px) {
+  .mainSection {
+    height: 300px;
+
+  }
+
+  .callToAction {
+    display: none;
+  }
+
+  .slogan {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  .innerMainSection {
+    right: 0;
+    top: 70px;
+    bottom: 0;
+  }
+
+  .companyName {
+    font-size: 2.4rem;
+  }
+
+  .callToActionQuoteBtn {
+    width: 140px;
+    height: 40px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .innerMainSection>button {
+    margin: 10px auto;
+    left: 0
+  }
+
+  .ourOffer,
+  .theProcess,
+  .theServices,
+  .aboutUsTitle {
+    margin: -25px auto 25px;
+  }
+
+  .ourOfferDesc {
+    flex-direction: column;
+  }
+
+  .ourOfferDesc * {
+    font-size: 1.2rem;
+  }
+
+  .ourOfferSlogan {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .part2Title>div,
+  .part1Title>div,
+  .part3Title>div {
+    font-size: 1.5rem;
+  }
+
+  .part2Title img,
+  .part3Title img {
+    margin-top: 15px;
+  }
+
+  .contactUsBtn {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px auto -30px;
+    font-size: 1.5rem;
+  }
+
+  .container {
+    display: none;
+  }
+
+  .step3Desc,
+  .step2Desc,
+  .step1Desc {
+    text-align: justify;
+    width: 350px;
+  }
+
+  .step1MainSection {
+    margin: 75px auto 0px;
+  }
+
+  .step2MainSection {
+    margin-top: -600px;
+  }
+
+  .step3MainSection {
+    margin-top: 300px;
+  }
+
+  .verticalSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .floor,
+  .doors,
+  .shades,
+  .powerWasher,
+  .handyMan {
+    margin-left: 0;
+    margin-right: 30px;
+  }
+
+  .wallPaint {
+    border-radius: 50%;
+    margin-left: -0;
+    margin-right: 30px;
+    box-shadow: 1px 0px 27px black;
+    width: 125px;
+  }
+
+  .serviceTitles {
+    text-align: center;
+  }
+
+  .driveWaySeal {
+    border-radius: 50%;
+    margin-right: 60px;
+    margin-left: -20px;
+    box-shadow: 1px 0px 27px black;
+    width: 125px;
+    height: 127px;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .houseRemodel {
+    width: 320px;
+    margin: 30px auto -10px;
+  }
+
+  .whyUsDesc {
+    padding: 0;
+  }
+
+  .callBtn {
+
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .05px solid black;
+    box-shadow: 1px 0 10px black;
+  }
+
+  .msgBtn {
+
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    z-index: 5;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: .05px solid black;
+    box-shadow: 1px 0 10px black;
+  }
+
+  .callBtn img {
+    width: 25px;
+  }
+
+
+  .msgBtn img {
+    width: 25px;
+  }
+
+  .whiteSection,
+  .ourServicesSection {
+    padding: 70px 0;
+  }
+
+  .testimonialSection {
+    z-index: 4;
+    width: 85vw;
+    margin: 0 auto;
+  }
+}

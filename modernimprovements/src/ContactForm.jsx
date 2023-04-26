@@ -4,7 +4,7 @@ import './contactForm.css'
 import ReactGA from 'react-ga';
 const ContactForm = () => {
 
-    const API_ENDPOINT = 'https://modern-improvement-contractors-abdull118.vercel.app/send-email/';
+    const API_ENDPOINT = 'https://glorious-outerwear-fly.cyclic.app/send-email/';
 
     const [formData, setFormData] = useState({
         name: "",
@@ -49,7 +49,7 @@ const ContactForm = () => {
                 <div className="solutions">Ensuring All Of Your Solutions Are At Your Fingertips.</div>
                 <div className="contactUs">Contact Us Today!</div>
 
-                <div className="telephone">Tel: <a href="tel:3474001820" >+1 {"("}347{")"} 400-1820</a></div>
+                <div className="telephone">Tel: <a href="tel:9342049409" >+1 {"("}934{")"} 204-9409</a></div>
                 <div className="emailaddress">Email: <a href="mailTo:naimi.airsh@gmail.com">naimi.airsh@gmail.com</a></div>
             </div>
 

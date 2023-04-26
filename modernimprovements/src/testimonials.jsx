@@ -51,6 +51,7 @@ const Testimonials = () => {
                 marginBottom: '50px',
                 marginTop: '20px',
                 boxShadow: '1px 0 20px white',
+                borderRadius: '10px',
 
             }}>Testimonials</div>
             <Slider {...settings}>

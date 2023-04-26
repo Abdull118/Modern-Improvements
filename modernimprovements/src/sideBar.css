@@ -6,21 +6,32 @@
     position: fixed;
     z-index: 4;
     width: 25px;
-    left: 25px;
-    top: 20px;
+    left: 10px;
+    top: 7px;
     cursor: pointer;
+    background-color: black;
+    padding: 7.5px;
+    border-radius: 15px;
 }
 
 .header {
     position: absolute;
     z-index: 5;
-    top: 3px;
-    background-color: transparent;
-    color: black;
+    top: 7px;
+    background-color: black;
+    border-radius: 15px;
+    color: #D8AE5E;
     width: 72%;
     margin-left: 30px;
     height: 60px;
     font-size: larger;
+    font-weight: 900;
+}
+
+.header img {
+    position: relative;
+    width: 100px;
+    top: -40px
 }
 
 .header>nav>ul {
@@ -33,12 +44,12 @@
 
 .header li {
     cursor: pointer;
-    text-shadow: 1px 0 35px black;
+
 }
 
 .header a {
     text-decoration: none;
-    color: black;
+    color: #D8AE5E;
 }
 
 .closeOut {
@@ -48,6 +59,8 @@
     box-shadow: 1px 0 33px gray;
     font-size: larger;
     cursor: pointer;
+    color: #D8AE5E;
+    padding: 0 10px;
 }
 
 .navSideBar>ul {
@@ -64,16 +77,38 @@
 .navSideBar a,
 .navSideBar Link {
     text-decoration: none;
-    color: black;
+    color: #D8AE5E;
 }
 
 .navSideBar li:hover {
     text-shadow: 1px 0 27px gray;
 }
 
-@media only screen and (max-width: 800px) {
+
+.mobileLogo {
+    width: 50px;
+    position: fixed;
+    z-index: 6;
+    right: 10px;
+}
+
+.graphic {
+    position: relative;
+    right: 175px;
+
+    opacity: .5;
+}
+
+@media only screen and (max-width: 600px) {
 
     .header {
         display: none
+    }
+}
+
+@media only screen and (max-width: 599px) {
+
+    .main {
+        display: flex;
     }
 }

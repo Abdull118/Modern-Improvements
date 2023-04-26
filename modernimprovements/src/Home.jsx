@@ -12,6 +12,8 @@ import houseRemodel from './assets/images/houseRemodel.jpeg'
 import vinylFlooring from './assets/images/vinylFlooring.png'
 import zebraShades from './assets/images/zebraShades.webp'
 import doors from './assets/images/doors.jpeg'
+import kitchen from './assets/images/kitchenRemodel.jpeg'
+import bathroom from './assets/images/8256505.png'
 import drivewaySeal from './assets/images/drivewaySeal.png'
 import powerWash from './assets/images/powerWash.png'
 import phone from './assets/images/phone.svg'
@@ -49,7 +51,7 @@ function Home() {
             <div className="App">
 
                 <div className='callToAction animate__animated  animate__fadeIn'>
-                    <a href="tel:3474001820">FREE Estimate! Call Now: (347) 400-1820</a>
+                    <a href="tel:9342049409">FREE Estimate! Call Now</a>
                 </div>
 
                 <div className='mainSection' id="home">
@@ -58,7 +60,9 @@ function Home() {
 
                     <img src={main} alt='modern kitchen and living room with gray, white and black color scheme and black vinyl flooring. This image showcase the high-quality work of Modern Improvement Contractors' />
 
-                    <p className='image-caption' aria-hidden='true'>This modern and stylish kitchen and living room features a sleek color scheme of gray, white and black, paired with durable black vinyl flooring. The combination of colors and materials creates a warm and inviting atmosphere, perfect for entertaining guests or spending time with family. The black vinyl flooring is ideal for high-traffic areas and can withstand heavy foot traffic. This image is an example of the high-quality work of Modern Improvement Contractors, a leading provider of home improvement services in the area. </p>
+                    <p className='image-caption' aria-hidden='true'>
+                        This modern and stylish kitchen and living room features a sleek color scheme of gray, white and black, paired with durable black vinyl flooring. The combination of colors and materials creates a warm and inviting atmosphere, perfect for entertaining guests or spending time with family. The black vinyl flooring is ideal for high-traffic areas and can withstand heavy foot traffic. This image is an example of the high-quality work of Modern Improvement Contractors, a leading provider of home improvement services in the area.
+                    </p>
 
 
                     <div className='innerMainSection'>
@@ -204,6 +208,21 @@ function Home() {
                                     </div>
                                 </div>
 
+                                <div className='doorInstallation'>
+                                    <img src={bathroom} className='doors' />
+                                    <div>
+                                        <div className='serviceTitles'>Bathroom Remodeling</div>
+                                        <ul>
+                                            <li>Wainscoating</li>
+                                            <li>Toilets</li>
+                                            <li>Sink Installations</li>
+                                            <li>Lighting</li>
+                                            <li>Fixtures</li>
+                                            <li>Crown Molding</li>
+                                            <li>And Many More...</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
                                 <div className='flooring'>
                                     <img src={vinylFlooring} className='floor' />
@@ -220,6 +239,7 @@ function Home() {
 
                                 </div>
 
+
                                 <div className='doorInstallation'>
                                     <img src={doors} className='doors' />
                                     <div>
@@ -231,7 +251,12 @@ function Home() {
                                         </ul>
                                     </div>
                                 </div>
+
+                                <div className='doorInstallation'>
+
+                                </div>
                             </div>
+
                             <div className='services2'>
 
 
@@ -243,6 +268,21 @@ function Home() {
                                             <li>Blinds Installation</li>
                                             <li>Custom Blinds</li>
                                             <li>Electric/Automated Blinds</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div className='handyman'>
+                                    <img src={kitchen} className='handyMan' />
+                                    <div>
+                                        <div className='serviceTitles'>Kitchen Remodeling</div>
+                                        <ul>
+                                            <li>Wainscoating</li>
+                                            <li>Cabinetry</li>
+                                            <li>Sink Installations</li>
+                                            <li>Fixtures</li>
+                                            <li>Lighting</li>
+                                            <li>Backsplash Installations</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -268,15 +308,19 @@ function Home() {
                                         </ul>
                                     </div>
                                 </div>
+
+
+
+
                             </div>
                         </div>
-
                         <div className='driveWay'>
                             <img src={drivewaySeal} className='driveWaySeal' />
                             <div>
                                 <div className='serviceTitles'>Driveway Sealing</div>
                             </div>
                         </div>
+
 
                         <div className='servicingCounty'><strong><em>Servicing All of Suffolk & Nassau County</em></strong></div>
                     </div>
@@ -329,19 +373,19 @@ function Home() {
 
             {phoneIcon && (
                 <>
-                    <a href="tel:3474001820" className="callBtn2">
+                    <a href="tel:9342049409" className="callBtn2">
                         <img src={phone} alt="" />
                     </a>
-                    <a href="sms:3474001820" className="msgBtn2">
+                    <a href="sms:9342049409" className="msgBtn2">
                         <img src={msg} alt="" />
                     </a>
                 </>
             )}
 
-            <a href="tel:3474001820" className="callBtn">
+            <a href="tel:9342049409" className="callBtn">
                 <img src={phone} alt="" />
             </a>
-            <a href="sms:3474001820" className="msgBtn">
+            <a href="sms:9342049409" className="msgBtn">
                 <img src={msg} alt="" />
             </a>
 

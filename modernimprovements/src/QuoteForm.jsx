@@ -6,7 +6,7 @@ import './sideBar.css'
 import './App.css'
 import ReactGA from 'react-ga';
 const QuoteForm = ({ setOpenQuote }) => {
-    const API_ENDPOINT = 'https://modern-improvement-contractors-abdull118.vercel.app/send-email/';
+    const API_ENDPOINT = 'https://glorious-outerwear-fly.cyclic.app/send-email/';
 
     const [formData, setFormData] = useState({
         name: "",
@@ -56,7 +56,7 @@ const QuoteForm = ({ setOpenQuote }) => {
                         <div className="contactUsQuote">Request A Quote From Modern Improvement Contractors Inc.</div>
                         <div>We'll be in contact in a few minutes!</div>
                         <div>Need a faster answers? Contact Us Below!</div>
-                        <div className="telephoneq">Tel: <a href="tel:3474001820" >+1 {"("}347{")"} 400-1820</a></div>
+                        <div className="telephoneq">Tel: <a href="tel:9342049409" >+1 {"("}934{")"} 204-9409</a></div>
                         <div className="emailaddressq">Email: <a href="mailTo:naimi.airsh@gmail.com">naimi.airsh@gmail.com</a></div>
                     </div>
 

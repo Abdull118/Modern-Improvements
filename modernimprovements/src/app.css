@@ -217,7 +217,7 @@
 
 .ourOfferDesc * {
   width: 350px;
-  text-align: justify;
+
   font-size: 20px;
 }
 
@@ -409,6 +409,7 @@ footer>div {
 
 .serviceTitles+ul {
   font-size: 19px;
+  width: 200px;
 }
 
 .serviceClassification {
@@ -430,8 +431,20 @@ footer>div {
 .handyman,
 .driveWay {
   display: flex;
-  margin-bottom: 60px;
   align-items: center;
+}
+
+.doorInstallation {
+  margin-bottom: 60px;
+}
+
+.blinds {
+  margin-bottom: 30px;
+}
+
+.powerWashing {
+  margin-top: 100px;
+  margin-bottom: 10px;
 }
 
 .paint {
@@ -763,6 +776,19 @@ footer>div {
   .driveWay {
     justify-content: normal;
     margin-left: 35px;
+  }
+
+  .serviceTitles+ul {
+    width: 170px;
+  }
+
+  .part2Title,
+  .part1Title,
+  .part3Title,
+  .step1Title,
+  .step3Title,
+  .step2Title {
+    margin-bottom: 0;
   }
 
 }

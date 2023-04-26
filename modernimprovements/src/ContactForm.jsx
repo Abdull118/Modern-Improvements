@@ -46,8 +46,8 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit} className="contactForms" id="contact">
             <div>
-                <div className="solutions">Ensuring All Of Your Solutions Are At Your Fingertips.</div>
-                <div className="contactUs">Contact Us Today!</div>
+                <div className="solutions">Contact Modern Improvement Contractors, Inc for Home Remodeling & Construction Services</div>
+
 
                 <div className="telephone">Tel: <a href="tel:9342049409" >+1 {"("}934{")"} 204-9409</a></div>
                 <div className="emailaddress">Email: <a href="mailTo:naimi.airsh@gmail.com">naimi.airsh@gmail.com</a></div>

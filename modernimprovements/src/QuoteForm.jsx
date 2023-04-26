@@ -3,7 +3,7 @@ import axios from 'axios';
 import './quoteForm.css'
 import Sidebar from "./SideBar";
 import './sideBar.css'
-import './App.css'
+import './app.css'
 import ReactGA from 'react-ga';
 const QuoteForm = ({ setOpenQuote }) => {
     const API_ENDPOINT = 'https://glorious-outerwear-fly.cyclic.app/send-email/';

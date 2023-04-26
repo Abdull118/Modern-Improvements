@@ -54,6 +54,14 @@ const Testimonials = () => {
                 borderRadius: '10px',
 
             }}>Testimonials</div>
+            <h1 style={{
+                fontSize: '28px',
+                textAlign: 'center',
+                marginBottom: '40px',
+                marginTop: '10px',
+                fontWeight: 'bold',
+                color: 'white'
+            }}>Our Home Improvement Projects – From Kitchen Remodels to Custom Decks</h1>
             <Slider {...settings}>
                 <div>
                     <img src={testimonial1} onClick={() => openModal(testimonial1)} width={'400px'} />
